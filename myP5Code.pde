@@ -4,12 +4,14 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var sunSize = 30; 
+var sunSize = 20; 
+var ladybugSize = 10;
 
 
 //🟢Draw Function - Runs on Repeat
 draw = function(){
   noStroke(); 
+  // all lines of code inside here will be repeatedly  
   
   // the beautiful blue sky
   background(82, 222, 240);
@@ -24,7 +26,10 @@ draw = function(){
   
   //ladybug
   fill(200,0,0);
-  ellipse(10, 350, 10, 10);
+  ellipse(ladybugSize, 350, 10, 10);
+
+  sunSize = sunSize + 1
+  ladybugSize = ladybugSize + 1
 }
 
 
